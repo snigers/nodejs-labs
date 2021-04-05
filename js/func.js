@@ -1,40 +1,32 @@
-console.log("test");
+'user strict';
 
-const cities = ["Athens", "Roma"];
-const f = s => s.toLowerCase();
+const powName = 'pow';
 
-console.dir(cities.map(f));
-
-function inc(a) {
-  return ++a;
-}
-
-const sum = function (a, b) {
-  return a + b;
+const obj1 = {
+  fn1: function inc(a) {
+    return ++a;
+  },
+  sum: function (a, b) {
+    return a + b;
+  },
+  inc(a) {
+    return ++a;
+  },
+  max: (a, b) => {
+    return a > b ? a : b;
+  },
+  min: (a, b) => {a < b ? a : b},
+  dec: a => --a,
+  [powName](a, b) {
+    return Math.pow(a, b);
+  }
 };
 
-const max = (a, b) => (a > b ? a : b);
+console.log('obj1.fn1.name = ' + obj1.fn1.name);
+console.log('obj1.sum.name = ' + obj1.sum.name);
+console.log('obj1.inc.name = ' + obj1.inc.name);
+console.log('obj1.max.name = ' + obj1.max.name);
+console.log('obj1.min.name = ' + obj1.min.name);
+console.log('obj1.dec.name = ' + obj1.dec.name);
 
-console.dir(
-  {
-    inc: inc.name,
-    sum: sum.name,
-    max: max.name,
-  }
-);
 
-console.dir(
-  {
-    inc: inc.length,
-    sum: sum.length,
-    max: max.length,
-  }
-);
-
-console.dir(
-  {
-    inc: inc.toString(),
-    sum: sum.toString(),
-    max: max.toString(),
-  }
-);
