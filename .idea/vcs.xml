@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/example/Closure" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/example/Function" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example/HigherOrderFunction" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/example/PartialApplication" vcs="Git" />
   </component>
 </project>
